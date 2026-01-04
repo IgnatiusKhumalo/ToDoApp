@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - ToDoApp</title>
+<link rel="stylesheet" href="style_css.css">
+</head>
+<body>
+<div class="app">
+<h1>Dashboard</h1>
+
+<label class="switch">
+<input type="checkbox" id="theme_toggle">
+<span class="slider"></span>
+</label>
+
+<input type="text" id="task_title" placeholder="Task title">
+<input type="text" id="task_desc" placeholder="Task description">
+<input type="date" id="task_due">
+<select id="task_priority">
+<option value="red">High (Red)</option>
+<option value="yellow">Medium (Yellow)</option>
+<option value="green">Low (Green)</option>
+<option value="blue">Optional (Blue)</option>
+</select>
+<input type="text" id="task_tags" placeholder="Tags (comma)">
+<input type="text" id="task_deps" placeholder="Dependencies (IDs)">
+<select id="task_recurring">
+<option value="none">No Recurrence</option>
+<option value="daily">Daily</option>
+<option value="weekly">Weekly</option>
+<option value="monthly">Monthly</option>
+</select>
+<button id="add_task_btn">Add Task</button>
+
+<h3>Filters</h3>
+<input type="text" id="filter_tags" placeholder="Filter by tag">
+<select id="filter_priority">
+<option value="">All</option>
+<option value="red">High</option>
+<option value="yellow">Medium</option>
+<option value="green">Low</option>
+<option value="blue">Optional</option>
+</select>
+<button id="apply_filter">Apply Filter</button>
+
+<ul id="task_list"></ul>
+<h3>Calendar</h3>
+<div id="calendar"></div>
+</div>
+<script src="script_js.js"></script>
+</body>
+</html>
